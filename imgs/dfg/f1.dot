@@ -1,0 +1,6 @@
+digraph "DFG for'f1' function" {
+	Node0x1ed4010[shape=record, label="  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0))"];
+	Node0x1ed4060[shape=record, label="  ret void"];
+	Node0x1ed4010 -> Node0x1ed4060
+edge [color=red]
+}

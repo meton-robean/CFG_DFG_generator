@@ -1,0 +1,14 @@
+digraph "DFG for'main' function" {
+	Node0x1ed6ee8[shape=record, label="  %1 = alloca i32, align 4"];
+	Node0x1ed6f60[shape=record, label="  store i32 0, i32* %1, align 4"];
+	Node0x1ed6fe0[shape=record, label="  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.3, i32 0, i32 0))"];
+	Node0x1ed7048[shape=record, label="  call void @f3()"];
+	Node0x1ed70b8[shape=record, label="  ret i32 0"];
+	Node0x1ed6ee8 -> Node0x1ed6f60
+	Node0x1ed6f60 -> Node0x1ed6fe0
+	Node0x1ed6fe0 -> Node0x1ed7048
+	Node0x1ed7048 -> Node0x1ed70b8
+edge [color=red]
+	Node0x1ed68a0 -> Node0x1ed6f60
+	Node0x1ed6f60 -> Node0x1ed6ee8
+}

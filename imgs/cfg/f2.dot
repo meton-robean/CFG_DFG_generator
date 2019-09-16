@@ -1,0 +1,6 @@
+digraph "CFG for'f2' function" {
+	BB1 [shape=record, label="{BB1:\l\l  %1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i32 0, i32 0))\l
+  call void @f1()\l
+  ret void\l
+}"];
+}

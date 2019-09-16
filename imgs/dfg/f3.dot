@@ -1,0 +1,34 @@
+digraph "DFG for'f3' function" {
+	Node0x1ed4b98[shape=record, label="  %1 = alloca i32, align 4"];
+	Node0x1ed4c10[shape=record, label="  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.2, i32 0, i32 0))"];
+	Node0x1ed4c90[shape=record, label="  store i32 1, i32* %1, align 4"];
+	Node0x1ed4cf8[shape=record, label="  %3 = load i32, i32* %1, align 4"];
+	Node0x1ed4d70[shape=record, label="  %4 = icmp eq i32 %3, 1"];
+	Node0x1ed4df8[shape=record, label="  br i1 %4, label %5, label %6"];
+	Node0x1ed4e58[shape=record, label="  call void @f1()"];
+	Node0x1ed4ec8[shape=record, label="  br label %7"];
+	Node0x1ed4f28[shape=record, label="  call void @f2()"];
+	Node0x1ed4f98[shape=record, label="  br label %7"];
+	Node0x1ed4ff8[shape=record, label="  call void @f1()"];
+	Node0x1ed6d68[shape=record, label="  call void @f2()"];
+	Node0x1ed6dc0[shape=record, label="  ret void"];
+	Node0x1ed4b98 -> Node0x1ed4c10
+	Node0x1ed4c10 -> Node0x1ed4c90
+	Node0x1ed4c90 -> Node0x1ed4cf8
+	Node0x1ed4cf8 -> Node0x1ed4d70
+	Node0x1ed4d70 -> Node0x1ed4df8
+	Node0x1ed4df8 -> Node0x1ed4e58
+	Node0x1ed4df8 -> Node0x1ed4f28
+	Node0x1ed4e58 -> Node0x1ed4ec8
+	Node0x1ed4ec8 -> Node0x1ed4ff8
+	Node0x1ed4f28 -> Node0x1ed4f98
+	Node0x1ed4f98 -> Node0x1ed4ff8
+	Node0x1ed4ff8 -> Node0x1ed6d68
+	Node0x1ed6d68 -> Node0x1ed6dc0
+edge [color=red]
+	Node0x1ed2d10 -> Node0x1ed4c90
+	Node0x1ed4c90 -> Node0x1ed4b98
+	Node0x1ed4b98 -> Node0x1ed4cf8
+	Node0x1ed4cf8 -> Node0x1ed4d70
+	Node0x1ed4d70 -> Node0x1ed4df8
+}

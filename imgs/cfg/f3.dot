@@ -1,0 +1,23 @@
+digraph "CFG for'f3' function" {
+	BB2 [shape=record, label="{BB2:\l\l  %1 = alloca i32, align 4\l
+  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.2, i32 0, i32 0))\l
+  store i32 1, i32* %1, align 4\l
+  %3 = load i32, i32* %1, align 4\l
+  %4 = icmp eq i32 %3, 1\l
+  br i1 %4, label %5, label %6\l
+}"];
+	BB2-> BB3;
+	BB2-> BB4;
+	BB3 [shape=record, label="{BB3:\l\l  call void @f1()\l
+  br label %7\l
+}"];
+	BB3-> BB5;
+	BB4 [shape=record, label="{BB4:\l\l  call void @f2()\l
+  br label %7\l
+}"];
+	BB4-> BB5;
+	BB5 [shape=record, label="{BB5:\l\l  call void @f1()\l
+  call void @f2()\l
+  ret void\l
+}"];
+}

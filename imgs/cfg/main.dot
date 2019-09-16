@@ -1,0 +1,8 @@
+digraph "CFG for'main' function" {
+	BB6 [shape=record, label="{BB6:\l\l  %1 = alloca i32, align 4\l
+  store i32 0, i32* %1, align 4\l
+  %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.3, i32 0, i32 0))\l
+  call void @f3()\l
+  ret i32 0\l
+}"];
+}
