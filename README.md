@@ -47,9 +47,9 @@ void ff3(){
 
 ### Result:  
 CFG:  
-![CFG](https://github.com/meton-robean/CFG_DFG_generator/blob/master/imgs/cfg/f3_cfg.png )
+![CFG](https://github.com/meton-robean/CFG_DFG_generator/blob/master/imgs/cfg/f3_cfg.png )  
 DFG:  
-![DFG](https://github.com/meton-robean/CFG_DFG_generator/blob/master/imgs/dfg/f3_dfg.png )   
+![DFG](https://github.com/meton-robean/CFG_DFG_generator/blob/master/imgs/dfg/f3_dfg.png )    
 
 
 
